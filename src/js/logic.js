@@ -16,6 +16,9 @@ function pad(number) {
 // ---------- Cupos ----------
 
 export function spotsLeft(event) {
+  if(event.capacity<=0){
+    return 0;
+  }
   return event.capacity - event.registered;
 }
 
